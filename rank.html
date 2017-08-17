@@ -1,0 +1,58 @@
+<html>
+<head>
+<script language="JavaScript">
+<!--
+function showrank() {
+ var per = document.neet.percentile.value;
+ document.neet.medicine.value = 45.88 * (100 - per);
+ document.neet.peds.value = 14.16 * (100 - per);
+ document.neet.resp.value = 3.5 * (100 - per);
+ document.neet.medpeds.value = (45.88 * (100 - per)) + (14.16 * (100 - per));
+ document.neet.medpedsresp.value = (45.88 * (100 - per)) + (14.16 * (100 - per)) + (3.5 * (100 - per));
+ document.neet.combined.value = 134 * (100 - per);
+ }
+// -->
+</script>
+</head>
+<body>
+<p>
+<center>
+<form name=neet method=POST>
+<h1><font color=red> NEETSS 2017 Rank Calculator </font></h1><br>
+<hr>
+<br>
+<table width=60% border=0>
+<tr><th bgcolor="#aaaaaa" width=50%><font color=black>Description</font></th>
+<th bgcolor="#aaaaaa" width=50%><font color=black>Ranks</font></th></tr>
+<tr><td bgcolor="#eeeee">Enter Percentile</td><td bgcolor="#aaeeaa" align=right><input
+type=text name=percentile
+size=10></td></tr>
+<tr><td bgcolor="#eeeee">Rank in Medicine</td><td bgcolor="#aaeeaa"
+align=right><input type=text
+name=medicine size=10></td></tr>
+<tr><td bgcolor="#eeeee">Rank in Pediatrics</td><td bgcolor="#aaeeaa" align=right><input
+type=text name=peds
+size=10></td></tr>
+<tr><td bgcolor="#eeeee">Rank in Resp Medicine</td><td bgcolor="#aaeeaa" align=right><input
+type=text name=resp
+size=10></td></tr>
+<tr><td bgcolor="#eeeee">Rank in Med + Peds</td><td bgcolor="#aaeeaa" align=right><input
+type=text name=medpeds
+size=10></td></tr>
+<tr><td bgcolor="#eeeee">Rank in Med + Peds + Resp</td><td bgcolor="#aaeeaa" align=right><input
+type=text name=medpedsresp
+size=10></td></tr>
+<tr><td bgcolor="#eeeee">Combined Rank</td><td bgcolor="#eeaaaa"
+align=right><em>Overall</em> <input
+type=text name=combined size=10></td></tr>
+<tr><td bgcolor="#eeeeaa" align=center><input type=reset
+value=Reset></td><td  bgcolor="#aaeeaa"align=center><input type=button onClick='showrank()'
+value=Calculate></td></tr>
+</table>
+</form>
+<font size=3>Enter only percentiles using all decimal points
+in first text box.<br>
+Non-numeric values will cause errors.</font>
+</center>
+</body>
+</html>
